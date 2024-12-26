@@ -2,7 +2,7 @@ import { Route, Routes } from "react-router-dom";
 import Home from "../Component/Home";
 import Counter from "../Component/Counter/Counter";
 
-const Allrouter = ()=>{
+const AllRouters = ()=>{
     return<>
     <Routes>
         <Route path="/" element={<Home/>}/>
@@ -11,4 +11,4 @@ const Allrouter = ()=>{
     </Routes>
     </>
 }
-export default Allrouter;
+export default AllRouters;
