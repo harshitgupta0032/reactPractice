@@ -7,6 +7,7 @@ const Home = () => {
                 <h1 className="font-bold text-xl  text-white sm:text-2xl">Practice ReactDoc</h1>
                 <LinkButton title={"Counter"} routepath={"/counter"}/>
                 <LinkButton title={"Tic-Tac-Toe"} routepath={"/tictacteo"}/>
+                <LinkButton title={"Product by Json"} routepath={"/productjson"}/>
             </div>
         </>
     )

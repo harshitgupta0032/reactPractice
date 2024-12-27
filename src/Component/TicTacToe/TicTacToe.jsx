@@ -1,9 +1,11 @@
 import { useState } from "react";
 import SquareButton from "./SquareButton";
 import CalculateWinner from "./CalculateWinner";
+import { useNavigate } from "react-router-dom";
 const TicTacToe = () => {
     const [square, setSquare] = useState(Array(9).fill(null));
     const [xIsNext, setXInNext] = useState(true);
+    const Navigate = useNavigate();
     const HandleSquare = (i) => {
         if (square[i] || CalculateWinner(square)) return;
 
@@ -28,6 +30,9 @@ const TicTacToe = () => {
         setSquare(Array(9).fill(null));
         setXInNext(true);
     }
+    const GoBack = ()=>{
+        return Navigate(-1);
+    }
     return (
         <>
             <div className="min-h-screen h-fit w-full text-white flex justify-center items-center flex-col gap-6">
@@ -45,6 +50,10 @@ const TicTacToe = () => {
                 </div>
                 <div className="font-bold text-lg  text-white sm:text-xl">{status}</div>
                 <button onClick={ResetGame} className="bg-slate-900 py-1 px-4 rounded-lg">Reset Game</button>
+                <div className="flex flex-wrap gap-3 mt-3">
+                    <button onClick={GoBack} className="bg-slate-900 py-1 px-4 rounded-lg">Go Back</button>
+                    <button className="bg-slate-900 py-1 px-4 rounded-lg"><a href="https://github.com/harshitgupta0032/reactPractice/tree/main/src/Component/TicTacToe" className="w-full h-full">See Code</a></button>
+                </div>
             </div>
         </>
     )
