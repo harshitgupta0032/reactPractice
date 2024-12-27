@@ -3,6 +3,7 @@ import Home from "../Component/Home";
 import Counter from "../Component/Counter/Counter";
 import TicTacToe from "../Component/TicTacToe/TicTacToe";
 import ProductByJson from "../Component/ProductByJson/ProductByJson";
+import Todo from "../Component/Todo/Todo";
 
 const AllRouters = () => {
     return <>
@@ -12,6 +13,7 @@ const AllRouters = () => {
             <Route path="/counter" element={<Counter />} />
             <Route path="/tictacteo" element={<TicTacToe />} />
             <Route path="/productjson" element={<ProductByJson />} />
+            <Route path="/todo" element={<Todo />} />
         </Routes>
     </>
 }

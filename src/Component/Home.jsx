@@ -8,6 +8,7 @@ const Home = () => {
                 <LinkButton title={"Counter"} routepath={"/counter"}/>
                 <LinkButton title={"Tic-Tac-Toe"} routepath={"/tictacteo"}/>
                 <LinkButton title={"Product by Json"} routepath={"/productjson"}/>
+                <LinkButton title={"To do"} routepath={"/todo"}/>
             </div>
         </>
     )
